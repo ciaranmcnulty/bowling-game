@@ -49,4 +49,4 @@ Feature: Player tracks their score automatically
     And I hit 2 pins in the second roll
     Then the score of the first frame is 13
     And the score of the second frame is 3
-    And my current score is 1
+    And my current score is 16
