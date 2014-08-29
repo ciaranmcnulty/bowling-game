@@ -3,6 +3,14 @@ Feature: Player tracks their score automatically
   As a Player
   I want to be able to automatically track the current score of the game
 
+  Rules:
+    A turn or frame is 2 rolls of the ball
+    A game is 10 frames
+    Strike is when all pins are levelled in a single roll
+    Spare is when all pins are knocked over in a single frame
+    If the 10th frame is a strike I get an 11th frame
+    If the 11th frame isa  strike I get a 12th frame
+
   Scenario: Gutter game ends in zero score
     Given I am the only player
     When I roll the ball 20 times missing all the pins
